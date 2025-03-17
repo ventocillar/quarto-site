@@ -1,0 +1,9 @@
+---
+title: "Projects"
+---
+
+# My Projects
+
+This page lists my data projects.
+
+[🏠 Home](/index/) | [👤 About](/about/)

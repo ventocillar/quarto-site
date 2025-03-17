@@ -1,0 +1,14 @@
+---
+title: "About"
+format:
+  html:
+    theme: default
+    toc: true
+website: true
+---
+
+## About Me
+
+I’m **Renato Ventocilla**, a data scientist and visualization expert with a passion for using data to tell compelling stories.
+
+This page provides more details about my background, research interests, and projects.

@@ -1,0 +1,20 @@
+---
+title: "Renato Ventocilla"
+format:
+  html:
+    theme: default
+    toc: true
+website: true
+---
+
+## Welcome to My Website
+
+Hello! I'm **Renato Ventocilla**, a social data scientist and data visualization designer. This website is where I share my work, insights, and projects in data analysis, visualization, and storytelling.
+
+### 📂 What You’ll Find Here:
+- 📊 **[Data Projects](projects/)** – A collection of data-driven insights, dashboards, and analyses.
+- ✍️ **[Blog Posts](blog/)** – My thoughts on data science, public policy, and research.
+- 📄 **[Resume & Experience](resume/)** – A snapshot of my professional background.
+
+### 🌍 Connect with Me
+Feel free to explore my work and reach out if you're interested in collaboration!

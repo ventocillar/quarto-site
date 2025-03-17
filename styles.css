@@ -1,0 +1,47 @@
+/* General improvements */
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navigation bar */
+.navbar {
+  background-color: #2c3e50 !important;
+  border-bottom: 2px solid #f39c12;
+}
+
+.navbar a {
+  color: white !important;
+  font-weight: bold;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Headings */
+h1 {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+h2 {
+  color: #f39c12;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #2c3e50;
+  color: white;
+  font-size: 14px;
+}

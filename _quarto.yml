@@ -1,0 +1,24 @@
+project:
+  type: website  # Change back to Quarto website
+
+website:
+  title: "Renato Ventocilla"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: projects.qmd
+        text: Projects
+  page-footer:
+    left: "© 2025 Renato Ventocilla"
+
+format:
+  html:
+    theme: default
+    css: styles.css  # If you have custom styles
+    toc: true  # Enables table of contents (optional)
+
+
+
