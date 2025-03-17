@@ -17,7 +17,7 @@ website:
 format:
   html:
     theme: default
-    css: styles.css  # If you have custom styles
+    css: styles.css
     toc: true  # Enables table of contents (optional)
 
 

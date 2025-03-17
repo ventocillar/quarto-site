@@ -2,6 +2,9 @@
 title: "About"
 format:
   html:
+    css: styles.css
+    head: |
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     theme: default
     toc: true
 website: true
