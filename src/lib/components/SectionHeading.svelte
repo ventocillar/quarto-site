@@ -2,7 +2,7 @@
 	let { overline = '', title }: { overline?: string; title: string } = $props();
 </script>
 
-<div class="mb-10">
+<div class="mb-12">
 	{#if overline}
 		<p class="mb-2 text-xs font-semibold uppercase tracking-widest" style="color: var(--accent-secondary);">
 			{overline}

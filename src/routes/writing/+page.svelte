@@ -13,7 +13,7 @@
 	<meta name="description" content="{siteData.substackTagline}" />
 </svelte:head>
 
-<section class="px-6 pt-24 pb-16">
+<section class="px-6 pt-28 pb-20">
 	<div class="mx-auto max-w-4xl">
 		<ScrollReveal>
 			<SectionHeading overline="Newsletter" title="Writing" />
@@ -24,7 +24,7 @@
 				href={siteData.social.substack}
 				target="_blank"
 				rel="noopener noreferrer"
-				class="mb-10 inline-flex items-center gap-2 rounded-lg px-5 py-2.5 text-sm font-semibold transition-all"
+				class="mb-10 inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold transition-all"
 				style="background: var(--accent-primary); color: var(--bg-page);"
 			>
 				<Newspaper size={16} />

@@ -5,7 +5,7 @@
 
 <section class="px-6 py-20">
 	<div
-		class="mx-auto max-w-3xl rounded-2xl border p-10 text-center md:p-14"
+		class="mx-auto max-w-3xl rounded-3xl border p-10 text-center md:p-14"
 		style="background: var(--bg-card); border-color: var(--border-default);"
 	>
 		<h2 class="text-2xl font-bold md:text-3xl" style="font-family: var(--font-display);">
@@ -17,7 +17,7 @@
 		<div class="mt-8 flex flex-wrap items-center justify-center gap-4">
 			<a
 				href="mailto:{siteData.email}"
-				class="inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold transition-all"
+				class="inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold transition-all"
 				style="background: var(--accent-primary); color: var(--bg-page);"
 			>
 				<Mail size={16} />

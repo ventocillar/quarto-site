@@ -5,7 +5,7 @@
 	let { heading, tagline }: { heading: string; tagline: string } = $props();
 </script>
 
-<section class="relative overflow-hidden px-6 py-24 md:py-32">
+<section class="relative overflow-hidden px-6 py-28 md:py-36">
 	<!-- Dot pattern background -->
 	<div class="pointer-events-none absolute inset-0" style="
 		background-image: radial-gradient(circle, var(--accent-tertiary) 1px, transparent 1px);
@@ -29,7 +29,7 @@
 			<div class="mt-8 flex flex-wrap items-center gap-4">
 				<a
 					href="/projects"
-					class="inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold transition-all"
+					class="inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold transition-all"
 					style="background: var(--accent-primary); color: var(--bg-page);"
 				>
 					View Projects

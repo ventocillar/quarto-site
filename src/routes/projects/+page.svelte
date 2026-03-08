@@ -25,7 +25,7 @@
 	<meta name="description" content="Data science projects and experiments by {siteData.name}." />
 </svelte:head>
 
-<section class="px-6 pt-24 pb-16">
+<section class="px-6 pt-28 pb-20">
 	<div class="mx-auto max-w-6xl">
 		<ScrollReveal>
 			<SectionHeading overline="Portfolio" title="Projects & Experiments" />
@@ -54,7 +54,7 @@
 		</ScrollReveal>
 
 		<!-- Project grid -->
-		<div class="grid gap-6 md:grid-cols-2">
+		<div class="grid gap-8 md:grid-cols-2">
 			{#each filtered as project, i (project.title)}
 				<ScrollReveal delay={i * 100}>
 					<ProjectCard {project} />

@@ -13,7 +13,7 @@ export const skills: SkillCategory[] = [
 	{
 		title: 'Programming',
 		icon: 'Code',
-		skills: ['R', 'Python', 'SQL', 'JavaScript', 'TypeScript', 'SvelteKit']
+		skills: ['R', 'Python', 'SQL', 'dbt', 'JavaScript', 'TypeScript', 'SvelteKit', 'Docker', 'Kubernetes']
 	},
 	{
 		title: 'Visualization',

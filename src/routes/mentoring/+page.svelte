@@ -14,7 +14,7 @@
 	<meta name="description" content="Mentoring and office hours for data science, R/Python programming, and careers in economics." />
 </svelte:head>
 
-<section class="px-6 pt-24 pb-16">
+<section class="px-6 pt-28 pb-20">
 	<div class="mx-auto max-w-6xl">
 		<ScrollReveal>
 			<SectionHeading overline="Mentoring" title="Learn & Grow Together" />
@@ -26,7 +26,7 @@
 		</ScrollReveal>
 
 		<!-- Mentoring areas -->
-		<div class="grid gap-6 md:grid-cols-3">
+		<div class="grid gap-8 md:grid-cols-3">
 			{#each mentoringAreas as area, i}
 				<ScrollReveal delay={i * 100}>
 					<MentoringCard {area} />
@@ -37,7 +37,7 @@
 </section>
 
 <!-- How it works -->
-<section class="px-6 py-16" style="background: var(--bg-muted);">
+<section class="px-6 py-20" style="background: var(--bg-muted);">
 	<div class="mx-auto max-w-3xl">
 		<ScrollReveal>
 			<SectionHeading overline="Process" title="How It Works" />
@@ -54,7 +54,7 @@
 </section>
 
 <!-- CTA -->
-<section class="px-6 py-16">
+<section class="px-6 py-20">
 	<div class="mx-auto max-w-3xl text-center">
 		<ScrollReveal>
 			<h2 class="text-2xl font-bold md:text-3xl" style="font-family: var(--font-display);">
@@ -65,7 +65,7 @@
 			</p>
 			<a
 				href="mailto:{siteData.email}"
-				class="inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold transition-all"
+				class="inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold transition-all"
 				style="background: var(--accent-primary); color: var(--bg-page);"
 			>
 				<Mail size={16} />

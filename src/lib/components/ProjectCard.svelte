@@ -6,7 +6,7 @@
 </script>
 
 <div
-	class="card-hover glass flex flex-col rounded-xl border p-6"
+	class="card-hover glass flex flex-col rounded-2xl border p-6"
 	style="background: var(--bg-card); border-color: var(--border-default);"
 >
 	<div class="mb-3 flex items-center justify-between">

@@ -15,9 +15,18 @@
 </svelte:head>
 
 <!-- Page header -->
-<section class="px-6 pt-24 pb-16">
+<section class="px-6 pt-28 pb-10">
 	<div class="mx-auto max-w-3xl">
 		<ScrollReveal>
+			<!-- Profile photo -->
+			<div class="mb-8 flex justify-center">
+				<img
+					src="/images/profile.svg"
+					alt="Renato Ventocilla Franco"
+					class="h-28 w-28 rounded-full object-cover ring-4"
+					style="--tw-ring-color: var(--accent-tertiary); background: var(--bg-muted);"
+				/>
+			</div>
 			<p class="mb-2 text-xs font-semibold uppercase tracking-widest" style="color: var(--accent-secondary);">
 				About
 			</p>
@@ -30,34 +39,47 @@
 </section>
 
 <!-- Bio -->
-<section class="px-6 pb-16">
-	<div class="mx-auto max-w-3xl space-y-5 text-base leading-relaxed" style="color: var(--text-secondary);">
+<section class="px-6 pb-20">
+	<div class="mx-auto max-w-3xl space-y-6 text-base leading-relaxed" style="color: var(--text-secondary);">
 		<ScrollReveal>
 			<p>
-				I'm a social data scientist and visualization designer with a background in economics and journalism.
-				I specialize in creating clear, insightful visualizations that tell compelling stories through data.
+				I've always been drawn to the space where numbers meet narrative. Trained first as a journalist
+				and then as an economist, I learned early on that the most powerful insights are the ones people
+				can actually understand — and that good design is what bridges that gap.
 			</p>
 		</ScrollReveal>
 
 		<ScrollReveal delay={100}>
-			<p>
-				My interdisciplinary approach combines analytical rigor with effective communication skills
-				to make complex data accessible and meaningful for diverse audiences. From econometric modelling
-				to interactive dashboards, I bring a focus on clarity, reproducibility, and design.
-			</p>
+			<blockquote
+				class="border-l-4 pl-5 italic"
+				style="font-family: var(--font-display); color: var(--accent-primary); border-color: var(--accent-tertiary);"
+			>
+				"Data only matters when it changes how people see the world."
+			</blockquote>
 		</ScrollReveal>
 
 		<ScrollReveal delay={200}>
 			<p>
-				Currently pursuing an MSc in Economics at the University of Bath, where my thesis explores
-				ordoliberalism, institutional design, and political polarisation in the Eurozone sovereign debt crisis.
+				Today I work as a social data scientist and visualization designer, building interactive
+				dashboards and crafting visual stories that make complex information feel intuitive. Whether
+				it's an econometric model or a D3-powered chart, I care about clarity, reproducibility,
+				and the human context behind every dataset.
+			</p>
+		</ScrollReveal>
+
+		<ScrollReveal delay={300}>
+			<p>
+				I'm currently finishing an MSc in Economics at the University of Bath, where my thesis
+				investigates ordoliberalism, institutional design, and political polarisation during the
+				Eurozone sovereign debt crisis — combining panel econometrics with the kind of historical
+				storytelling that first drew me to this field.
 			</p>
 		</ScrollReveal>
 	</div>
 </section>
 
 <!-- Career Timeline -->
-<section class="px-6 py-16" style="background: var(--bg-muted);">
+<section class="px-6 py-20" style="background: var(--bg-muted);">
 	<div class="mx-auto max-w-3xl">
 		<ScrollReveal>
 			<SectionHeading overline="Journey" title="Career Timeline" />
@@ -74,7 +96,7 @@
 </section>
 
 <!-- Skills Summary -->
-<section class="px-6 py-16">
+<section class="px-6 py-20">
 	<div class="mx-auto max-w-3xl">
 		<ScrollReveal>
 			<SectionHeading overline="Toolkit" title="Skills & Expertise" />
@@ -105,7 +127,7 @@
 </section>
 
 <!-- Connect -->
-<section class="px-6 py-16" style="background: var(--bg-muted);">
+<section class="px-6 py-20" style="background: var(--bg-muted);">
 	<div class="mx-auto max-w-3xl text-center">
 		<ScrollReveal>
 			<SectionHeading overline="Connect" title="Let's Get in Touch" />
@@ -116,7 +138,7 @@
 				href={siteData.social.linkedin}
 				target="_blank"
 				rel="noopener noreferrer"
-				class="inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold transition-all"
+				class="inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold transition-all"
 				style="background: var(--accent-primary); color: var(--bg-page);"
 			>
 				<Linkedin size={16} />

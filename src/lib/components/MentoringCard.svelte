@@ -9,7 +9,7 @@
 </script>
 
 <div
-	class="card-hover rounded-xl border-l-4 p-6"
+	class="card-hover rounded-2xl border-l-4 p-6"
 	style="background: var(--bg-card); border-color: var(--accent-primary); border-right: 1px solid var(--border-default); border-top: 1px solid var(--border-default); border-bottom: 1px solid var(--border-default);"
 >
 	<div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg" style="background: var(--bg-muted); color: var(--accent-primary);">

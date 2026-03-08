@@ -28,13 +28,13 @@
 />
 
 <!-- Skills -->
-<section class="px-6 py-16">
+<section class="px-6 py-20">
 	<div class="mx-auto max-w-6xl">
 		<ScrollReveal>
 			<SectionHeading overline="Expertise" title="Skills & Tools" />
 		</ScrollReveal>
 
-		<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+		<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 			{#each skills as skill, i}
 				<ScrollReveal delay={i * 100}>
 					<SkillCard {skill} />
@@ -46,7 +46,7 @@
 
 <!-- Featured Project -->
 {#if featuredProject}
-	<section class="px-6 py-16" style="background: var(--bg-muted);">
+	<section class="px-6 py-20" style="background: var(--bg-muted);">
 		<div class="mx-auto max-w-6xl">
 			<ScrollReveal>
 				<SectionHeading overline="Featured" title="Latest Project" />
@@ -74,7 +74,7 @@
 
 <!-- Latest Substack Articles -->
 {#if data.articles && data.articles.length > 0}
-	<section class="px-6 py-16">
+	<section class="px-6 py-20">
 		<div class="mx-auto max-w-6xl">
 			<ScrollReveal>
 				<SectionHeading overline="Writing" title="Latest from Substack" />
@@ -83,7 +83,7 @@
 				</p>
 			</ScrollReveal>
 
-			<div class="grid gap-6 md:grid-cols-3">
+			<div class="grid gap-8 md:grid-cols-3">
 				{#each data.articles as article, i}
 					<ScrollReveal delay={i * 100}>
 						<SubstackArticle {article} />

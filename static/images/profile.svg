@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 112" width="112" height="112">
+  <circle cx="56" cy="56" r="56" fill="#EDE4D0"/>
+  <text x="56" y="60" text-anchor="middle" dominant-baseline="central"
+        font-family="'Playfair Display', Georgia, serif"
+        font-size="32" font-weight="700" fill="#8B6D3F">
+    RVF
+  </text>
+</svg>
