@@ -1,0 +1,202 @@
+@import 'tailwindcss';
+
+/* ===========================
+   Design System — CSS Custom Properties
+   =========================== */
+
+:root {
+	/* Typography */
+	--font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+	--font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+	/* Type Scale */
+	--text-xs: 0.75rem;
+	--text-sm: 0.875rem;
+	--text-base: 1rem;
+	--text-lg: 1.125rem;
+	--text-xl: 1.25rem;
+	--text-2xl: 1.5rem;
+	--text-3xl: 1.875rem;
+	--text-4xl: 2.25rem;
+	--text-5xl: 3rem;
+
+	/* Shadows */
+	--shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+	--shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+	--shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+	--shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+
+	/* Borders */
+	--radius-sm: 0.375rem;
+	--radius-md: 0.5rem;
+	--radius-lg: 0.75rem;
+	--radius-xl: 1rem;
+
+	/* Transitions */
+	--transition-fast: 150ms ease;
+	--transition-base: 200ms ease;
+	--transition-slow: 300ms ease;
+	--transition-reveal: 600ms cubic-bezier(0.16, 1, 0.3, 1);
+
+	/* Layout */
+	--max-width: 72rem;
+	--navbar-height: 4rem;
+}
+
+/* ===========================
+   Light Theme (default)
+   =========================== */
+:root,
+[data-theme='light'] {
+	--bg-page: #FAF6EE;
+	--bg-card: #F5ECD9;
+	--bg-muted: #EDE4D0;
+	--bg-elevated: #FFFFFF;
+
+	--text-primary: #5C4A2A;
+	--text-secondary: #8B6D3F;
+	--text-muted: #A89272;
+
+	--accent-primary: #8B6D3F;
+	--accent-secondary: #B89E6B;
+	--accent-tertiary: #D6BA8A;
+
+	--border-default: rgba(139, 109, 63, 0.15);
+	--border-accent: rgba(139, 109, 63, 0.3);
+
+	--shadow-color: rgba(92, 74, 42, 0.06);
+
+	color-scheme: light;
+}
+
+/* ===========================
+   Dark Theme
+   =========================== */
+[data-theme='dark'] {
+	--bg-page: #001221;
+	--bg-card: #011C33;
+	--bg-muted: #022A45;
+	--bg-elevated: #033258;
+
+	--text-primary: #F5ECD9;
+	--text-secondary: #D6BA8A;
+	--text-muted: #8B7A5C;
+
+	--accent-primary: #D6BA8A;
+	--accent-secondary: #B89E6B;
+	--accent-tertiary: #8B6D3F;
+
+	--border-default: rgba(214, 186, 138, 0.12);
+	--border-accent: rgba(214, 186, 138, 0.25);
+
+	--shadow-color: rgba(0, 0, 0, 0.3);
+
+	color-scheme: dark;
+}
+
+/* ===========================
+   Base Styles
+   =========================== */
+body {
+	font-family: var(--font-body);
+	background: var(--bg-page);
+	color: var(--text-primary);
+	line-height: 1.7;
+	transition: background var(--transition-slow), color var(--transition-slow);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-display);
+	color: var(--text-primary);
+	line-height: 1.2;
+}
+
+a {
+	color: var(--accent-primary);
+	text-decoration: none;
+	transition: color var(--transition-fast);
+}
+
+a:hover {
+	color: var(--accent-secondary);
+}
+
+/* ===========================
+   Scroll Reveal Animation
+   =========================== */
+.reveal {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity var(--transition-reveal), transform var(--transition-reveal);
+}
+
+.reveal.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* ===========================
+   Card Hover Effect
+   =========================== */
+.card-hover {
+	transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.card-hover:hover {
+	transform: translateY(-4px);
+	box-shadow: var(--shadow-xl);
+}
+
+/* ===========================
+   Glassmorphism (dark mode cards)
+   =========================== */
+[data-theme='dark'] .glass {
+	background: rgba(1, 28, 51, 0.6);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+}
+
+/* ===========================
+   Scrollbar
+   =========================== */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--bg-page);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--accent-tertiary);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--accent-secondary);
+}
+
+/* ===========================
+   Selection
+   =========================== */
+::selection {
+	background: var(--accent-tertiary);
+	color: var(--text-primary);
+}
+
+/* ===========================
+   Page Transition
+   =========================== */
+.page-transition {
+	animation: fadeIn 200ms ease-out;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
